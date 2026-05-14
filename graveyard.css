@@ -1,0 +1,163 @@
+:root {
+  --bg: #F5F0E8;
+  --surface: #EDE8DC;
+  --border: #D4C9B0;
+  --ink: #1A1A18;
+  --ink-muted: #6B6355;
+  --gold: #C4873A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--ink);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--gold);
+  margin-top: 4px;
+}
+
+.search-bar {
+  margin-bottom: 24px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--ink);
+  outline: none;
+}
+
+#search:focus {
+  border-color: var(--gold);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tab-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.tab-card:hover {
+  border-color: var(--gold);
+}
+
+.tab-emoji {
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.tab-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tab-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-url {
+  font-size: 11px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.tab-age {
+  font-size: 11px;
+  color: var(--ink-muted);
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.restore-btn {
+  background: none;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0;
+}
+
+.restore-btn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--ink-muted);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--ink-muted);
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
